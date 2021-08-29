@@ -1,36 +1,40 @@
 ﻿#include <iostream>
 #include <map>
-
+#include <vector>
 using namespace std;
 
-struct pos
+enum lexema_type {keyword,operand,variable,constant};
+
+vector <string> keyword = { "begin", "end" };
+vector <char> operand = { "+", "/" };
+vector <string> variable = { "a", "z" };
+
+lexema_type get_type(lexema)
 {
-	int row;
-	int numb;
-};
+}
 
 struct lexema
 {
 	int id;
-	pos pos;
+	int row;
+	int pos;
 	string value;
 };
 
 map <int, lexema> buffer;
 
-lexema l_unit = { 0, {0, 0}, ""};
+lexema l_unit = { 0, 0, 0, ""};
 
 int main()
 {
-	string unit = "";
+	char unit = '\0';
 	int i = 0;
 
 	for (;;)
 	{
-		cin >> unit;
+		unit = cin.get();
 		l_unit.value = unit;
 		l_unit.id = i;
-		int us = unit.size();
 		buffer[i] = {i, {0, us}, unit};
 	}
 }
