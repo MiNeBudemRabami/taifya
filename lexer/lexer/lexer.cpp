@@ -1,19 +1,14 @@
 ﻿#include <iostream>
 #include <map>
 #include <vector>
+
 using namespace std;
 
-enum lexema_type {keyword,operand,variable,constant};
+//vector <string> keyword = { "begin", "end" };
+//vector <char> operand = { "+", "/" };
+//vector <string> variable = { "a", "z" };
 
-vector <string> keyword = { "begin", "end" };
-vector <char> operand = { "+", "/" };
-vector <string> variable = { "a", "z" };
-
-lexema_type get_type(lexema)
-{
-}
-
-struct lexema
+struct lexema_struct
 {
 	int id;
 	int row;
@@ -21,20 +16,54 @@ struct lexema
 	string value;
 };
 
-map <int, lexema> buffer;
-
-lexema l_unit = { 0, 0, 0, ""};
-
 int main()
 {
-	char unit = '\0';
-	int i = 0;
+	map <int, lexema_struct> bank;
+
+	lexema_struct unit = { 1, 1, 1, "" }; //id, row, pos, value
+	int id = unit.id;
+	//char ch = '\0';
 
 	for (;;)
 	{
-		unit = cin.get();
-		l_unit.value = unit;
-		l_unit.id = i;
-		buffer[i] = {i, {0, us}, unit};
+		cin >> unit.value;
+
+		bank[id] = unit;
+
+		id++;
+		unit.id == id;
+		unit.pos += unit.value.size() + 1;
+
+		if (unit.value == "&")
+		{
+			break;
+		}
 	}
+
+	/*
+	for (;;)
+	{
+		ch = cin.get(); 
+		pos++;
+		if (ch != ' ')
+		{
+			value.push_back(ch);
+		}
+		else
+		{
+			bank[id] = unit;
+			value.clear();
+		}
+		if (ch == '\n')
+		{
+			pos = 1;
+			row++;
+		}
+
+		if (ch == '&')
+		{
+			break;
+		}
+	}
+	*/
 }
