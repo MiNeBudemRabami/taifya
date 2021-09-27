@@ -1,7 +1,0 @@
-<Z> -> <PROG> [end]
-<PROG> -> PROG [identifier] <VAR> begin <listst> END
-<VAR> -> VAR <idlist>
-<idlist> -> [identifier] <A>
-<A> -> , <idlist> | {empty}
-<listst> -> st <B>
-<B> -> <listst> | {empty}
