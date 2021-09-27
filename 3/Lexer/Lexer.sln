@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lexer", "Lexer.vcxproj", "{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LexerLib", "LexerLib\LexerLib.vcxproj", "{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Debug|x64.ActiveCfg = Debug|x64
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Debug|x64.Build.0 = Debug|x64
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Debug|x86.ActiveCfg = Debug|Win32
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Debug|x86.Build.0 = Debug|Win32
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Release|x64.ActiveCfg = Release|x64
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Release|x64.Build.0 = Release|x64
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Release|x86.ActiveCfg = Release|Win32
+		{FED3483E-2DAC-46C7-A219-EDE6DCEB5BF4}.Release|x86.Build.0 = Release|Win32
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Debug|x64.ActiveCfg = Debug|x64
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Debug|x64.Build.0 = Debug|x64
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Debug|x86.Build.0 = Debug|Win32
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Release|x64.ActiveCfg = Release|x64
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Release|x64.Build.0 = Release|x64
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Release|x86.ActiveCfg = Release|Win32
+		{CF743ABD-FF7E-4F4C-B123-91EE6BC39C99}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FDEB948-8611-46A6-92F3-083437AE5CB0}
+	EndGlobalSection
+EndGlobal
