@@ -68,6 +68,7 @@ void ValidateSentence(const std::vector<std::string>& characters, const Table<st
 				if constexpr (std::is_same_v<T, Shift>)
 				{
 					currData = st.emplace(table[arg.pointer]);
+					std::cout << "transit  " << arg.pointer << "\n";
 				}
 				else if constexpr (std::is_same_v<T, Reduce>)
 				{
